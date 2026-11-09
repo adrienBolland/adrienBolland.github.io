@@ -1,141 +1,188 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Adrien Bolland</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adrien Bolland</title>
+<meta name="description" content="Adrien Bolland, postdoctoral researcher in reinforcement learning at École Polytechnique.">
+<link rel="icon" href="media/icon.svg" type="image/svg+xml">
+<link rel="icon" href="media/icon.png" type="image/png" sizes="180x180">
+<link rel="apple-touch-icon" href="media/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root {
+    --text: #1f2328;
+    --muted: #6a737d;
+    --faint: #a3aab3;
+    --rule: #e6e8eb;
+    --accent: #1f6fb4;
+    --nav-h: 3.25rem;
+    --width: 828px;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #fff; color: var(--text); font: 400 1rem/1.65 var(--sans); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="https://scholar.google.com/citations?user=8m9bl5oAAAAJ" class="image avatar"><img src="files/adrien_bolland.jpg" alt="" /></a>
-					<h1><strong>Adrien Bolland</strong></h1>
-					<h1>forename.name@uliege.be</h1>	
-				</div>
-			</header>
+  .nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255, 255, 255, .9);
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    font-family: var(--mono); font-size: .9rem;
+  }
+  .nav div {
+    min-height: var(--nav-h);
+    display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: .2rem 1.5rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav a { color: var(--text); }
+  .nav a:hover { color: var(--accent); text-decoration: none; }
 
-		<!-- Main -->
-			<div id="main">
+  .banner img { display: block; width: 100%; height: auto; max-height: 640px; object-fit: contain; }
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>About Me</h2>
-						</header>
-						<p>I am a postdoctoral researcher working on deep reinforcement learning with applications to the renewable-energy transition at the University of Liège.</p>
-						<ul class="actions">
-							<li><a href="files/cv_may_2025.pdf" class="button">CV</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://twitter.com/adrienbolland" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/adrienBolland/" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/adrien-bolland-48497218a/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
-					</section>
+  .nav div, main, footer { width: min(var(--width), 100% - 2rem); margin: 0 auto; }
+  section { padding-top: 2.5rem; scroll-margin-top: var(--nav-h); }
+  #about { border-top: 1px solid var(--rule); }
+  h1, h2 { font-family: var(--mono); font-weight: 500; letter-spacing: -.01em; line-height: 1.25; }
+  h1 { font-size: 2rem; margin: 0 0 1.25rem; }
+  h2 { font-size: 1.35rem; margin: 0 0 1.25rem; padding-bottom: .4rem; border-bottom: 1px solid var(--rule); }
+  .muted { color: var(--muted); }
 
-				<!-- Two -->
-					<section id="two">
-						<h2>Selected Publications</h2>
-												
-						<div class="row" style="list-style-type:none;">
-							<li>
-								<h3><a href="https://arxiv.org/abs/2412.06655">Off-policy maximum entropy RL with future state and action visitation measures</a></h3>
-								<p>Adrien Bolland, Gaspard Lambrechts, Damien Ernst<br>
-								Preprint, 2025</p>
-							</li>
-							<li>
-								<h3><a href="https://rlj.cs.umass.edu/2024/papers/Paper105.html">Informed POMDP : leveraging additional information in model-based RL</a></h3>
-								<p>Gaspard Lambrechts, Adrien Bolland, Damien Ernst<br>
-								Reinforcement Learning Conference, 2024</p>
-							</li>
-							<li>
-								<h3><a href="https://arxiv.org/abs/2402.00162">Behind the myth of exploration in policy gradients</a></h3>
-								<p>Adrien Bolland, Gaspard Lambrechts, Damien Ernst<br>
-								Preprint, 2024</p>
-							</li>
-							<li>
-								<h3><a href="https://openreview.net/forum?id=3Ba6Hd3nZt">Policy gradient algorithms implicitly optimize by continuation</a></h3>
-								<p>Adrien Bolland, Gilles Louppe, Damien Ernst<br>
-								Transactions on Machine Learning Research, 2023</p>
-							</li>
-							<li>
-								<h3><a href="https://www.jair.org/index.php/jair/article/view/13350">Jointly learning environments and control policies with projected stochastic gradient ascent</a></h3>
-								<p>Adrien Bolland, Ioannis Boukas, Mathias Berger, Damien Ernst<br>
-								Journal of Artificial Intelligence Research, 2022</p>
-							</li>
-							<li>
-								<h3><a href="https://link.springer.com/article/10.1007/s10994-021-06020-8">A deep reinforcement learning framework for continuous intraday market bidding</a></h3>
-								<p>Ioannis Boukas, Damien Ernst, Thibaut Théate, Adrien Bolland, Alexandre Huynen, Martin Buchwald, Christelle Wynants, Bertrand Cornélusse<br>
-								Machine Learning, 2021</p>
-							</li>
-						</div>
-						
-						<h3>Find more on <a href="https://scholar.google.com/citations?user=8m9bl5oAAAAJ"><span class="label">Google Scholar</span></a></h3>
+  .about { display: grid; grid-template-columns: 1fr 210px; gap: 4rem; align-items: start; }
+  .about p { margin: 0 0 1rem; text-wrap: pretty; }
+  .card { display: flex; flex-direction: column; align-items: center; gap: .6rem; text-align: center; }
+  .card img {
+    width: 200px; height: auto; aspect-ratio: 1; object-fit: cover;
+    border-radius: 50%; padding: 4px; border: 1px solid var(--rule); background: #fff;
+  }
+  .contact { display: flex; flex-direction: column; align-items: flex-end; gap: .5rem; }
+  .icons { display: flex; gap: 1rem; }
+  .icons a { display: inline-flex; color: var(--muted); }
+  .icons a:hover { color: var(--accent); }
+  .icons svg { width: 22px; height: 22px; fill: currentColor; }
+  .email { font-family: var(--mono); font-size: .85rem; overflow-wrap: anywhere; }
 
-					</section>
-					
-				<!-- Three -->
-					<section id="three">
-						<h2>Presentations</h2>
-						<div class="row" style="list-style-type:none;">
-							<li>
-								<h3><a href="presentations/rl_1.pdf">Introduction to Gradient-Based Direct Policy Search</a></h3>
-							</li>
-							<li>
-								<h3><a href="presentations/rl_2.pdf">Advanced Policy-Gradient Algorithms</a></h3>
-							</li>
-							<li>
-								<h3><a href="presentations/rl_sizing_operation.pdf">Reinforcement Learning for Sizing and Operation</a></h3>
-							</li>
-							<li>
-								<h3><a href="https://orbi.uliege.be/bitstream/2268/330927/1/PhD%20Presentation.pdf">Reimagining Exploration: Theoretical Insights and Practical Advancements in Policy Gradient Methods</a></h3>
-							</li>
-						</div>
-					</section>
+  .list { list-style: none; margin: 0; padding: 0; }
+  .list li { margin-bottom: 1.2rem; }
+  .list .title { font-weight: 500; }
+  .meta { color: var(--muted); font-size: .9rem; }
+  .pdf {
+    margin-left: .3em; padding: .05em .4em;
+    border: 1px solid var(--rule); border-radius: 2px;
+    font-family: var(--mono); font-size: .72rem;
+  }
+  .pdf:hover { text-decoration: none; border-color: var(--accent); }
 
-				<!-- Four -->
-					<section id="four">
-						<h2>Teaching</h2>
-						<div class="row" style="list-style-type:none;">
-							<li>
-								<h3><a href="https://damien-ernst.be/teaching/elec0018-1-energy-markets/">Energy markets and regulation</a></h3>
-							</li>
-							<li>
-								<h3><a href="https://damien-ernst.be/info8003-1-optimal-decision-making-for-complex-problems/">Reinforcement learning</a></h3>
-							</li>
-							<li>
-								<h3><a href="https://www.programmes.uliege.be/cocoon/20202021/en/cours/MATH0461-2.html">Introduction to numerical optimization</a></h3>
-							</li>
-						</div>
-					</section>
+  footer { margin-top: 3rem; }
+  footer p {
+    margin: 0; padding: 1rem 0 2rem; border-top: 1px solid var(--rule);
+    color: var(--faint); font-size: .78rem; font-weight: 300; text-align: center;
+  }
 
-					</section>
-			</div>
+  @media (max-width: 640px) {
+    .nav { font-size: .8rem; }
+    .nav div { gap: .2rem 1rem; }
+    h1 { font-size: 1.7rem; text-align: center; }
+    .about { grid-template-columns: 1fr; gap: 1.25rem; }
+    .card { order: -1; }
+    .card img { width: 150px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="copyright">
-						<li>&copy; Adrien Bolland</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+<nav class="nav"><div>
+  <a href="#publications">Selected publications</a>
+  <a href="#talks">Presentations &amp; Courses</a>
+</div></nav>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<div class="banner">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="media/banner-tall-still.webp" width="1080" height="1350">
+    <source media="(prefers-reduced-motion: reduce)" srcset="media/banner-wide-still.webp">
+    <source media="(max-width: 640px)" srcset="media/banner-tall.webp" width="1080" height="1350">
+    <img src="media/banner-wide.webp" width="1920" height="1080" alt="Animation of an electrical grid where reinforcement learning controllers block tap changers to prevent an overvoltage: no control, a single-agent controller and multi-agent controllers.">
+  </picture>
+</div>
 
-	</body>
+<main>
+  <section id="about">
+    <h1>Adrien Bolland</h1>
+    <div class="about">
+      <div>
+        <p>I am a postdoctoral researcher working on deep reinforcement learning and its application to the operation of electrical power systems. I trained as an electrical engineer at the University of Liège, where I completed my Ph.D. under the supervision of Damien Ernst in 2025. My thesis studied how exploration influences policy-gradient algorithms and proposed new approaches to maximum-entropy exploration. Along the way, I worked with industrial and academic partners on energy applications such as microgrid design and control, battery bidding on intraday electricity markets, and renewable energy&nbsp;communities.</p>
+        <p>As an F.R.S.-FNRS postdoctoral researcher in the group of Louis Wehenkel, I then studied how reinforcement learning can help transmission system operators keep voltages stable as grids integrate more renewable sources and new loads. I now continue this work at École Polytechnique with Paul Mangold, with particular attention to decentralized and multi-agent reinforcement&nbsp;learning.</p>
+        <p>The animation at the top of this page shows two controllers trained with reinforcement learning, a single agent and a team of agents, acting on an electrical grid to prevent an overvoltage that would otherwise lead to system collapse within a few&nbsp;minutes.</p>
+        <p><a href="files/cv.pdf">Academic CV</a> <span class="muted">(last modified: 8 November 2026)</span></p>
+      </div>
+      <div class="card">
+        <img src="media/photo.jpg" alt="Adrien Bolland" width="200" height="200">
+        <div class="contact">
+          <div class="icons">
+            <a href="https://github.com/adrienBolland" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/adrien-bolland-48497218a/" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+          <a class="email" href="mailto:adrien.bolland@outlook.fr">adrien.bolland@outlook.fr</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Selected publications</h2>
+    <ul class="list">
+      {%- for p in site.data.publications %}
+      <li>
+        <a class="title" href="{{ p.url }}">{{ p.title }}</a>
+        <div>{{ p.authors | replace: "Adrien Bolland", "<b>Adrien Bolland</b>" }}</div>
+        <div class="meta">{{ p.venue }}{% if p.note %} <i>({{ p.note }})</i>{% endif %}</div>
+      </li>
+      {%- endfor %}
+    </ul>
+    <p>Full list on <a href="https://scholar.google.com/citations?user=8m9bl5oAAAAJ">Google Scholar</a>.</p>
+  </section>
+
+  <section id="talks">
+    <h2>Presentations &amp; Courses</h2>
+    <ul class="list">
+      <li>
+        <a class="title" href="https://hdl.handle.net/2268/341124">Maximum Entropy RL and Policy Gradients: Why and What to Explore?</a>
+        <div class="meta">Invited talk, Mini-Workshop on Reinforcement Learning, University of Mannheim, 2026<a class="pdf" href="files/maxent-rl-2026.pdf">pdf</a></div>
+      </li>
+      <li>
+        <a class="title" href="https://hdl.handle.net/2268/337108">Breaking Down the Network Operation Complexity</a>
+        <div class="meta">Invited talk, Delft University of Technology and Academic Board of Elia, 2025<a class="pdf" href="files/network-operation-2025.pdf">pdf</a></div>
+      </li>
+      <li>
+        <a class="title" href="https://hdl.handle.net/2268/314239">Introduction to Gradient-Based Direct Policy Search</a>
+        <div class="meta">Lecture slides, Reinforcement Learning course, University of Liège, 2024<a class="pdf" href="files/policy-gradient-1.pdf">pdf</a></div>
+      </li>
+      <li>
+        <a class="title" href="https://hdl.handle.net/2268/314240">Advanced Policy-Gradient Algorithms</a>
+        <div class="meta">Lecture slides, Reinforcement Learning course, University of Liège, 2024<a class="pdf" href="files/policy-gradient-2.pdf">pdf</a></div>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Adrien Bolland · This page was coded with Claude Code.</p>
+</footer>
+
+</body>
 </html>

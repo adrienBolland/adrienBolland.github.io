@@ -1,0 +1,28 @@
+# Selected publications shown on the home page, in this order.
+# Fields: title, url, authors, venue, note (optional).
+
+- title: "SecuLEx: A Secure Limit Exchange Market for Dynamic Operating Envelopes"
+  url: https://doi.org/10.1016/j.epsr.2026.113736
+  authors: Maurizio Vassallo, Adrien Bolland, Alireza Bahmanyar, Louis Wehenkel, Laurine Duchesne, Dong Liu, Sania Khaskheli, Alexis Ha Thuc, Pedro P. Vergara, Amjad Anvari-Moghaddam, Simon Gerard, Damien Ernst
+  venue: Electric Power Systems Research, 2027
+  note: "co-first authors: M. Vassallo and A. Bolland"
+
+- title: "Bayesian Inference for Estimating Generation Costs in Electricity Markets"
+  url: https://doi.org/10.1016/j.epsr.2026.113541
+  authors: Matthias Pirlet, Adrien Bolland, Alexandre Huynen, Quentin Louveaux, Gilles Louppe, Damien Ernst
+  venue: Electric Power Systems Research, 2027
+
+- title: "Maximum-Entropy Exploration with Future State-Action Visitation Measures"
+  url: https://rlj.cs.umass.edu/2026/papers/Paper59.html
+  authors: Adrien Bolland, Gaspard Lambrechts, Damien Ernst
+  venue: RLC, 2026
+
+- title: "Informed POMDP: Leveraging Additional Information in Model-Based RL"
+  url: https://rlj.org/papers/lambrechts2024informed
+  authors: Gaspard Lambrechts, Adrien Bolland, Damien Ernst
+  venue: RLC, 2024
+
+- title: "A Deep Reinforcement Learning Framework for Continuous Intraday Market Bidding"
+  url: https://doi.org/10.1007/s10994-021-06020-8
+  authors: Ioannis Boukas, Damien Ernst, Thibaut Théate, Adrien Bolland, Alexandre Huynen, Martin Buchwald, Christelle Wynants, Bertrand Cornélusse
+  venue: Machine Learning, 2021
